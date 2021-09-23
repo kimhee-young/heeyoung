@@ -52,7 +52,7 @@
     #header  .cboth {clear:both; display:block;}
     #header  .h_sec02  .inner {width:1200px; height:70px; margin:0 auto; padding:0;}
 
-    #header  .h_sec02  .T_left_area  .btn_all  .all_ct {width: 30px; height: 30px; background:url(https://www.tasty9.com/morenvyimg/top_allcate.png)no-repeat; position: absolute; top: 20px; left: 100px;}
+    #header  .h_sec02  .T_left_area  .btn_all  .all_ct {width: 30px; height: 30px; background:url(https://www.tasty9.com/morenvyimg/top_allcate.png) no-repeat; position: absolute; top: 20px; left: 100px;}
     #header  .h_sec02  .top_cate {text-align:center; transition:all 0.3s;}
     #header  .h_sec02  .top_cate > div {position:static; display:inline-block; vertical-align:middle;}
     #header  .h_sec02  .top_menu ul {list-style-type: circle; margin-block-start: 0px; margin:block-end: 0px;}
@@ -72,32 +72,44 @@
 
 
 
-    #slider {width:100%; height:558px;}
-    #slider > img {width:100%; height:500px; margin:0;}
+  #slidewrap {width: 100%; height: 200px; margin: 0px auto; position: relative; overflow: hidden;}
+
+  .slide {width: 100%;}
+
+  .slide > li {width: 100%; height: 200px; float: left;}
+
+  .slide > li > img {width: 100%; height: 100%;}
+
+  .prev {left:0; border-radius: 0 10px 10px 0px; padding:10px;}
+
+  .next {right:0; border-radius: 10px 0px 0px 10px; padding:10px;}
+    
+
 
     #md {width:1200px; height:550px;}
     #md > h1 {text-align:center; letter-spacing:3px; margin:70px 0 10px 30px; font-size:20px;}
-    #md > ul {text-align:center; list-style:none; font-size:10px; color:#000; margin:0;   padding:5px; height:65px;}
-    #md > ul > li {position:static; display:inline-block; margin:30px 30px; list-style:none; text-align:-webkit-match-parent; border:1px solid #eee; height:35px; border-radius:10px; line-height:13px; margin:0px 5px 15px 30px; padding:0 10px;}
+    #md > ul {text-align:center; list-style:none; font-size:10px; color:#000; margin:0;  padding:5px; height:65px;}
+    #md > ul > li {position:static; display:inline-block; margin:30px 30px; list-style:none; text-align:-webkit-match-parent; border:1px solid #eee; height:40px; border-radius:10px; line-height:10px; margin:0px 5px 15px 30px; padding:0 10px;}
     #md > ul > li > a {line-height:40px; width:1200px; color:#888; font-size:12px; font-weight:600;}
-    #md > ul > li > a:hover {opacity:0.3}
+    #md > ul > li > a:hover {opacity:0.9;}
+    #md > ul > li:hover {background-color:#eee; font-color:#000;}
     #md > .mbox {width:150px; height:150px; float:left; box-sizing:border-box; margin:80px -40px 80px 90px;}
     #md > .mbox > img {width:150px; height:150px; float:left; box-sizing:border-box; margin:0 40px 50px 0px;}
 
     #dd {width:1200px; height:750px; margin:0; }
-    #dd > .mbox {width:186px; height:200px;  float:left; margin:30px;}
+    #dd > .mbox {width:186px; height:235px;  float:left; margin:30px;}
     #dd > .mbox > a > img  {width:186px; height:200px;}
     #dd > .mbox > a > img:hover {opacity:0.5;}
     
     
-    #dd > .mbox > h2 {font-size:12px; color:#000; text-align:left; margin:2px 0 0 0px;}
-    #dd > .mbox > .no > p {font-size:12px; color:#666; text-align:left; margin:2px 0 0 0px; text-decoration:line-through; font-family:'Lato','Noto Sans KR'}
-    #dd > .mbox > .vb > p {font-size:12px; color:#666; text-align:left; margin:2px 0 0 0px; text-decoration:line-through; font-family:'Lato','Noto Sans KR'}
+    #dd > .mbox > h2 {font-size:12px; color:#000; text-align:left; margin-top:10px;}
+    #dd > .mbox > .no > p {font-size:12px; color:#666; text-align:left; margin:2px 0 0 0px; text-decoration:line-through; font-family:'Lato','Noto Sans KR';}
+    #dd > .mbox > .vb > p {font-size:12px; color:#666; text-align:left; margin:2px 0 0 0px; text-decoration:line-through; font-family:'Lato','Noto Sans KR';}
     #dd > .mbox > h2 > a {color:#000;}
     #dd > .mbox > p > span {color:tomato; font-size:5px; font-family:'Lato','Noto Sans KR'}
 
-    #dd > .mbox > p {font-size:12px; color:#666; text-align:left; margin:9px 0 0 0px; font-family:'Lato','Noto Sans KR'}
-    #dd > .mbox > p > a {color:#666; font-family:'Lato','Noto Sans KR'}
+    #dd > .mbox > p {font-size:12px; color:#666; text-align:left; margin:9px 0 0 0px; font-family:'Lato','Noto Sans KR';}
+    #dd > .mbox > p > a {color:#666; font-family:'Lato','Noto Sans KR';}
     #dd > .mbox > img {width:20px; height:10px;}
 
 
@@ -117,11 +129,11 @@
     #mf {width:1200px; height:450px;}
     #mf > h2 {text-align:center; letter-spacing:5px; font-size:20px; margin:40px 40px; font-family:'Lato','Noto Sans KR'}
 
-    #mm > .mbox {width:385px; height:220px; float:left; box-sizing:border-box; margin:40px 8px 0 45px; backgorund-color:pink;}
-    #mm > .mbox > a > img {width:385px; height:220px; float:left; box-sizing:border-box; margin:0px;}
+    #mm > .mbox {width:385px; height:auto; float:left; box-sizing:border-box; margin:40px 8px 0 45px; backgorund-color:pink;}
+    #mm > .mbox > a > img {width:385px; height:220px; float:left; box-sizing:border-box; margin:0px;;}
 
-    #mm > .mbox > h3 {font-size:16px; color:#1b1b1b; font-weight:300; text-align:left; margin:10px 0px; font-family:'Lato','Noto Sans KR'}
-    #mm > .mbox > p {font-size:11px; color:#5b5b5b; font-weight:300;  text-align:left; margin:9px 0 0 0px; font-family:'Lato','Noto Sans KR'}
+    #mm > .mbox > h3 {font-size:16px; color:#1b1b1b; font-weight:200; text-align:left; margin-top:220px;; font-family:'Lato','Noto Sans KR'; padding-top:20px;}
+    #mm > .mbox > p {font-size:13px; color:#5b5b5b; font-weight:300;  text-align:left; margin:9px 0 0 0px; font-family:'Lato','Noto Sans KR';}
     #mm > .mbox:nth-of-type {margin:40px 50px 0 30px;}
 
     #mm > div:first-of-type {margin:0 0 0 15px;}
@@ -132,17 +144,17 @@
     #nn > img {width:1200px; height:150px;}
 
     #nb  {width:1200px; height:580px;}
-    #nb > h3 {text-align:center; letter-spacing:1px; margin:40px 0; font-size:20px; padding:15px; font-family:'Lato','Noto Sans KR'}
-    #na > .box {width:225.9px; height:290px; border:2px solid #ddd; float:left; margin:0 10px 0 0; }
-    #na > .box > a > img {width:222px; height:188px; float:left; box-sizing:border-box; margin:0 15px 0 0px;}
+    #nb > h3 {text-align:center; letter-spacing:5px;  font-size:20px; padding:16px; font-family:'Lato','Noto Sans KR'; }
+    #na > .box {width:225.9px; height:310px; border:1px solid #ddd; float:left; margin:0px; box-shadow:4px 4px 4px #eee}
+    #na > .box > a > img {width:222px; height:188px; float:left; box-sizing:border-box; margin:0px 15px 0 0px;}
     #na > .box > a > img:hover {opacity:0.5;}
+    #na  .box  a  .m_m {margin-top: 200px;}
 
-    #na > .box > a > h3 {font-size:11.5px; color:#000; text-align:left; margin:30px 0 0 10px; font-family:'Lato','Noto Sans KR'}
-    #na > .box > a > .vv > p {font-size:14px; color:#666; text-align:left; margin:30px 0 0 10px; text-decoration:line-through; font-family:'Lato','Noto Sans KR'}
+    #na > .box > a > h3 {font-size:11.5px; color:#000; text-align:left; font-family:'Lato','Noto Sans KR'; margin:10px 10px 10px 10px; }
+    #na > .box > a > .vv > p {font-size:14px; color:#666; text-align:left; margin:20px 0 0 10px; text-decoration:line-through; font-family:'Lato','Noto Sans KR'}
     #na > .box > a > p {font-size:13px; color:#666; text-align:left; margin:0 0 0 10px; font-family:'Lato','Noto Sans KR'}
     #na > .box > a > p > span {color:tomato; font-size:14px; font-family:'Lato','Noto Sans KR'}
     #na > .box > a > .bb > img {width:25px; height:15px; margin:0 0 0 10px;}
-    #na  .box  a  .m_m {margin-top: 200px;}
 
     #na > div:first-of-type {margin:0 0 0 13px;}
     #na > div:nth-of-type(2) {margin:0 0 0 13px;}
@@ -175,12 +187,14 @@
     #me > .box > a > img {width:184px; height:165px; float:left; box-sizing:border-box; margin:0;}
 
     #me > .box > a > img:hover {opacity:0.5;}
+    
 
-    #me > .box > h4 {font-size:10px; color:#666; text-align:left; margin:0 8px 10px 8px; text-overflow: ellipsis; font-family:'Lato','Noto Sans KR';}
-    #me > .box > .tte > p {font-size:10px; color:#666; text-align:left; margin:0 8px 0px 8px; text-decoration:line-through; font-family:'Lato','Noto Sans KR';}
-    #me > .box > p {font-size:10px; color:#666; text-align:left; margin:0 8px 0px 8px;; font-family:'Lato','Noto Sans KR'; }
+    #me > .box > h4 {font-size:12px; color:#666; text-align:left; margin:0px 8px 10px 8px; text-overflow:ellipsis; font-family:'Lato','Noto Sans KR';}
+    #me > .box > .tte > p {font-size:12px; color:#666; text-align:left; margin:0px 8px 0px 8px; text-decoration:line-through; font-family:'Lato','Noto Sans KR';}
+    #me > .box > p {font-size:12px; color:#666; text-align:left; margin:0 8px 0px 8px;; font-family:'Lato','Noto Sans KR'; }
     #me > .box > p > span {color:tomato; font-size:7px; font-family:'Lato','Noto Sans KR' margin:0 8px 0px 8px;}
-    #me > .box >.tty > img {width:25px; height:15px; margin:0 8px 0px 8px;}
+    #me > .box >.tty > img {width:20px; height:10px; margin:0 8px 0px 8px;}
+   
 
 
     #me > div:first-of-type {margin:0 0 0 13px;}
@@ -198,8 +212,8 @@
 
     #ab > .box {width:385px; height:450px; float:left; box-sizing:border-box; margin:10px 10px 0 0px; border-bottom:1px solid #eee;}
     #ab > .box > a > img {width:385px; height:280px; float:left; margin:15px 0px;}
-    #ab > .box > h5 {font-size:18px; color:#000; text-align:left; margin:10px 0; text-overflow: ellipsis; font-family:'Lato','Noto Sans KR'}
-    #ab > .box > p {font-size:14px; color:#666; text-align:left; margin:30px 0px; font-family:'Lato','Noto Sans KR'}
+    #ab > .box > h5 {font-size:18px; color:#000; text-align:left; margin:10px 0; text-overflow: ellipsis; font-family:'Lato','Noto Sans KR';}
+    #ab > .box > p {font-size:14px; color:#666; text-align:left; margin:30px 0px; font-family:'Lato','Noto Sans KR';}
 
 
 
@@ -209,12 +223,12 @@
     #an > .box > a > img:hover {opacity:0.5;}
     
     
-    #an > .box > p {font-size:13px; color:#666; text-align:left; margin:10px 0 0 0px; font-family:'Lato','Noto Sans KR'}
-    #an > .box > p > span {color:green; font-size:12px; font-family:'Lato','Noto Sans KR'}
-    #an > .box > .yyu > img {width:8px; height:8px;}
+    #an > .box > p {font-size:13px; color:#666; text-align:left; margin:0; font-family:'Lato','Noto Sans KR';}
+    #an > .box > p > span {color:green; font-size:11px; font-family:'Lato','Noto Sans KR';}
+    #an > .box > #yyu > img {width:15px; height:10px;}
 
-    #an > .box > h6 {font-size:12px; color:#000; text-align:left; font-family:'Lato','Noto Sans KR'}
-    #an > .box > .yyy > p {font-size:13px; color:#666; text-align:left; text-decoration:line-through; margin:10px 0 0 15px; font-family:'Lato','Noto Sans KR'}
+    #an > .box > h6 {font-size:12px; color:#000; text-align:left; font-family:'Lato','Noto Sans KR'; margin:30px 10px 10px 30px;}
+    #an > .box > .yyy > p {font-size:13px; color:#666; text-align:left; text-decoration:line-through; margin:10px 0 0 15px; font-family:'Lato','Noto Sans KR';}
  
 
     #an > div:first-of-type {margin:0 0 0 5px;}
@@ -229,14 +243,14 @@
 
 
 
-    #az {width:1250px; height:500px;}
+    #az {width:1250px; height:300px;}
     #az > h5 { text-align:center; letter-spacing:10px; margin:80px 0 0 0px; font-size:20px; font-family:'Lato','Noto Sans KR'}
 
     #az > .ml > img {float:left; width:200px; height:200px; margin:50px 10px 10px 30px;}
 
 
 
-    footer {width:100%; border-top:1px solid #e5e5e5; margin-top:130px; padding-bottom:50px; height:440px; background-color:#fbf9f9; }
+    footer {width:100%; border-top:1px solid #e5e5e5; margin-top:130px; padding-bottom:50px; height:440px; background-color:#fbf9f9;}
      
     .cboth {clear:both;}
     #mfooter .inner_sec {margin:0 auto; max-width:1250px; padding:50px 50px; }
